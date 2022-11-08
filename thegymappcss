@@ -1,0 +1,154 @@
+*{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+a{
+    text-decoration:inherit;
+    color:inherit;
+    display:inherit;
+}
+
+header{
+    width:100%;
+    text-align:center;
+    position: fixed;
+    z-index:1;
+    left:0px;
+    top:0px;
+    background-color:white;
+}
+
+
+
+main{
+    position:relative;
+    top:5rem;
+    padding: 10px 0px;
+    display:grid;
+    height: 700px;
+    width:100%;
+    grid-template-columns: 1fr 3fr 1fr;
+    justify-items:center;
+    row-gap: 10px;
+    background-color:rgb(255, 166, 64);
+
+}
+
+h2{
+    display: grid;
+    justify-items: center;
+    align-self:center;
+}
+
+.chest{
+    display: grid;
+    align-self:center;
+    grid-column-start: 2;
+    width: 100%;
+    height:100%;
+    border-radius: 5px;
+    background-color: rgb(255, 227, 68);
+}
+
+.chest:hover, .shoulders:hover, .legs:hover, .back:hover, .abs:hover, .cardio:hover, weight:hover{
+    filter: blur(1px);
+    cursor:default;
+}
+
+.chest:active, .shoulders:active, .legs:active, .back:active, .abs:active, .cardio:active, weight:active{
+
+    opacity:0.5;
+}
+
+.shoulders{
+    display: grid;
+    align-self:center;
+    grid-column-start: 2;
+    width: 100%;
+    height:100%;
+    border-radius: 5px;
+    background-color: rgb(255, 227, 68);
+}
+
+
+.legs{
+    display: grid;
+    align-self:center;
+    grid-column-start: 2;
+    width: 100%;
+    height:100%;
+    border-radius: 5px;
+    background-color: rgb(255, 227, 68);
+}
+
+
+.back{
+    display: grid;
+    align-self:center;
+    grid-column-start: 2;
+    width: 100%;
+    height:100%;
+    border-radius: 5px;
+    background-color: rgb(255, 227, 68);
+}
+
+
+.abs{
+    display: grid;
+    align-self:center;
+    grid-column-start: 2;
+    width: 100%;
+    height:100%;
+    border-radius: 5px;
+    background-color: rgb(255, 227, 68);
+}
+
+
+.cardio{
+    display: grid;
+    align-self:center;
+    grid-column-start: 2;
+    width: 100%;
+    height:100%;
+    border-radius: 5px;
+    background-color: rgb(255, 227, 68);
+}
+
+
+.weight{
+    display: grid;
+    align-self:center;
+    grid-column-start: 2;
+    width: 100%;
+    height:100%;
+    border-radius: 5px;
+    background-color: rgb(255, 227, 68);
+}
+
+
+
+@media (max-width: 480px){
+
+    h2{
+        font-size: 1rem;
+    }
+
+    h1{
+        font-size: 1.5rem;
+    }
+
+    main{
+        position:relative;
+        top:4rem;
+        padding: 10px 0px;
+        display:grid;
+        height: 700px;
+        width:100%;
+        grid-template-columns: 1fr 3fr 1fr;
+        justify-items:center;
+        row-gap: 10px;
+        background-color:rgb(255, 166, 64);
+    
+    }
+
+}
