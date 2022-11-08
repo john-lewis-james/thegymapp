@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title> The Gym App </title>
+        <link rel='stylesheet' href="theGymApp.css">
+
+        <!--font style taken from google fonts below-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+
+    </head>
+
+    <body>
+
+        <header>
+            <h1>THE GYM APP</h1>
+        </header>
+
+   
+
+        <main>
+            <div class='chest'><a href="chest.html"><h2>CHEST</h2></a></div>
+            <div class='shoulders'><h2>SHOULDERS</h2></div>
+            <div class='legs'><h2>LEGS</h2></div>
+            <div class='back'><h2>BACK</h2></div>
+            <div class='abs'><h2>ABDOMINALS</h2></div>
+            <div class='cardio'><h2>CARDIO</h2></div>
+            <div class='weight'><h2>WEIGHT</h2></div>
+
+        </main>
+
+
+    </body>
+
+
+
+
+
+
+</html>
