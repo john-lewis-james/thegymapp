@@ -11,18 +11,55 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
 
     </head>
 
     <body>
 
-        <h1>CHEST</h1>
+        <header>
+            <h1>CHEST</h1>
+        </header>
 
-        <main>
+
+
+        <main class = "Ex">
+            
+            <!--BELOW IS CODE FOR THE GRAPH-->
+            <div class="container">
+                <h3>Bench</h3>
+                <canvas id="myChart"></canvas>       
+            </div>
+
+            <div class="container">
+                <h3>Pectoral Fly</h3>
+                <canvas id="myChart"></canvas>       
+            </div>
+
+
 
             <script>
                 let bench = prompt('What did you bench today?');
                 console.log('You benched' + bench);
+
+                bench2 = Number(bench);
+
+                //CHART CODE IS BELOW
+                let myChart = document.getElementById('myChart').getContext('2d');
+
+                let massPopChart = new Chart(myChart, {
+
+                    type: 'line',
+                    data: {
+                        labels:['Monday', 'Tuesday', 'Wednesday', 'Today'],
+                        datasets:[{
+                            label:'Weight in lbs',
+                            data:[
+                                '90', '100', '135', bench2
+                            ]
+                        }]},
+                    options: {}
+                    });
             </script>
 
 
